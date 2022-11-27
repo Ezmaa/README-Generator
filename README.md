@@ -1,7 +1,7 @@
 # README-Generator-1
 https://github.com/Ezmaa/README-Generator-1
 # Description
-a readme generator that has good functionality
+No description yet 
 # Table of Contents
 * [Description](#description)
 * [Installation](#installation)
@@ -11,13 +11,13 @@ a readme generator that has good functionality
 * [Tests](#tests)
 * [Questions](#questions)
 # Installation 
-inquirer is a required dependenci in order to run the application.
+Please install the inquirer dependencey in order to run the application.
 # Usage
-In order to run the application, node index.js
+In order to run the application use the command: node index.js
 # License 
-This README.md generator is licensed under the Apache License 2.0 license.
-# Contributing 
-Contributers: me
+This README.md generator is licensed under the MIT license.
+# Contributing
+me
 # Questions:
 * Email: ezinmark@gmail.com
 * Github: https://github.com/Ezmaa
