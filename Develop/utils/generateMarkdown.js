@@ -13,7 +13,26 @@ function renderLicenseSection(license) {}
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
   return `# ${data.title}
-
+https://github.com/${data.name}/${data.title}
+# Description
+${data.description}
+# Table of Contents
+* [Installatioo]{#installation}
+* [Usage]{#usage}
+* [License]{#license}
+* [Contributing]{#contributing}
+* [Tests]{#tests}
+* [Questions]{#questions}
+# Installation 
+${data.installation} is a required dependenci in order to run the application.
+# Usage
+In order to run the application, ${data.command}
+# License 
+This README.md generator is licensed under the ${data.license} license.
+# Contributing 
+Contributers: ${data.contributions}
+# Contact Me:
+Email: ${data.email}
 `;
 }
 
