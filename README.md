@@ -1,14 +1,13 @@
-# README Generator
-https://github.com/Ezmaa/README Generator
+# README-Generator-1
+https://github.com/Ezmaa/README-Generator-1
 # Description
 idk
 # Table of Contents
-* [Installatioo]{#installation}
-* [Usage]{#usage}
-* [License]{#license}
-* [Contributing]{#contributing}
-* [Tests]{#tests}
-* [Questions]{#questions}
+* [Installation](#installation)
+* [Usage](#usage)
+* [License](#license)
+* [Contributing](#contributing)
+* [Questions](#questions)
 # Installation 
 inquirer is a required dependenci in order to run the application.
 # Usage

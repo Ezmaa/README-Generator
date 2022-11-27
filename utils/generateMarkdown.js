@@ -17,12 +17,11 @@ https://github.com/${data.name}/${data.title}
 # Description
 ${data.description}
 # Table of Contents
-* [Installatioo]{#installation}
-* [Usage]{#usage}
-* [License]{#license}
-* [Contributing]{#contributing}
-* [Tests]{#tests}
-* [Questions]{#questions}
+* [Installation](#installation)
+* [Usage](#usage)
+* [License](#license)
+* [Contributing](#contributing)
+* [Questions](#questions)
 # Installation 
 ${data.installation} is a required dependenci in order to run the application.
 # Usage
