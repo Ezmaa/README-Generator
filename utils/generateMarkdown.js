@@ -17,21 +17,25 @@ https://github.com/${data.name}/${data.title}
 # Description
 ${data.description}
 # Table of Contents
+* [Description](#description)
 * [Installation](#installation)
 * [Usage](#usage)
 * [License](#license)
 * [Contributing](#contributing)
+* [Tests](#tests)
 * [Questions](#questions)
 # Installation 
-${data.installation} is a required dependenci in order to run the application.
+Please install the ${data.installation} dependencey in order to run the application.
 # Usage
-In order to run the application, ${data.command}
+In order to run the application use the command: ${data.command}
 # License 
 This README.md generator is licensed under the ${data.license} license.
-# Contributing 
-Contributers: ${data.contributions}
-# Contact Me:
-Email: ${data.email}
+# Contributing
+${data.contributions}
+# Questions:
+* Email: ${data.email}
+* Github: https://github.com/${data.name}
+
 `;
 }
 
