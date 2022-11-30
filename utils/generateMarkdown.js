@@ -1,56 +1,44 @@
+
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
 function renderLicenseBadge(license) {
-
-  let badge = "";
-
-  if(license === "MIT") {
-    badge = '![GitHub](https://img.shields.io/github/license/Ezmaa/README-Generator)'
-  } else if (license = 'Apache License 2.0') {
-    badge = '![License](https://img.shields.io/github/license/Ezmaa/README-Generator)'
-  } else if (license = 'GNU General Public License v3.0') {
-    badge = '![License](![License: GPL v3](https://img.shields.io/github/license/Ezmaa/README-Generator))'
+  if (!license) {
+    return ``;
   } else {
-     badge = ""
+    return `[![${license} license](https://img.shields.io/badge/License-${license}-blue.svg)](${renderLicenseLink(license)})`
   }
-  return badge;
 }
 
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
 function renderLicenseLink(license) {
-  let licenseLink;
-
-    if(license === 'MIT') {
-      licenseLink = 'http://choosealicense.com/licenses/mit/'
-    } else if (license === 'Apache License 2.0') {
-      licenseLink = 'https://www.apache.org/licenses/LICENSE-2.0'
-    } else if (license === 'GNU General Public License v3.0') {
-      licenseLink = 'https://www.gnu.org/licenses'
-    } else {
-      licenseLink = ''
-    }
-    return licenseLink;
+  if (license === 'MIT') {
+    return `https://lbesson.mit-license.org/`
+  }
+  if (license === 'GPL') {
+    return `http://perso.crans.org/besson/LICENSE.html`
+  }
+  if (license === 'CC--0') {
+    return `https://creativecommons.org/licenses/by-nd/4.0` 
+  }
 };
 
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
 function renderLicenseSection(license) {
-  let licenseSect = ""
-  if(license === 'None') {
-    licenseSect = ''
+  if (!license) {
+    return ``;
   } else {
-    licenseSect =
-    `License: ${license}`
+    return `## Licenses
+    This project is covered under the ${license} license. To learn more about what this means, click the license button at the top.`
   }
-  return licenseSect;
 }
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
   return `# ${data.title}
-# ${renderLicenseSection(data.license)} ${renderLicenseBadge(data.license)}
-# ${renderLicenseLink(data.license)}
+${renderLicenseBadge(data.license)}
+${renderLicenseLink(data.license)}
 
 https://github.com/${data.name}/${data.title}
 # Description
@@ -69,6 +57,7 @@ Please install the ${data.installation} dependencey in order to run the applicat
 In order to run the application use the command: ${data.command}
 # License 
 This README.md generator is licensed under the ${data.license} license.
+${renderLicenseSection(data.license)}
 # Contributing
 ${data.contributions}
 # Questions:

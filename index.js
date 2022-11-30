@@ -1,8 +1,6 @@
 // TODO: Include packages needed for this application
 const fs = require('fs');
 const inquirer = require('inquirer');
-
-
 const generatorMarkdown = require('./utils/generateMarkdown');
 
 
@@ -48,7 +46,7 @@ const questions = [{
     type: "list",
     message: "What is the license being used?",
     name: "license",
-    choices: ['MIT', 'Apache License 2.0', 'GNU General Public License v3.0', 'None']
+    choices: ['MIT', 'CC--0', 'GPL']
 },
 {
     type: "input",
